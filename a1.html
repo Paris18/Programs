@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>practice</title>
+</head>
+<body>
+  <p>hello</p>
+  <br>
+  <form action="/app1/login" method="post" Content-Type="application/json">
+  {% csrf_token %}
+  NAME:<input type='text' name='user_name' length=20/><br>
+  PASSWORD:<input type='password' name='password' length=10/><br>
+  <input type="submit" value="login" class="btn btn-primary"><br>
+</form>
+</body>
+</html>
